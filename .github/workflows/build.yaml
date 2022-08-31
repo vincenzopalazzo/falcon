@@ -1,4 +1,4 @@
-name: "cln4zig: sanity check"
+name: "falcon: sanity check"
 
 on:
   push:
