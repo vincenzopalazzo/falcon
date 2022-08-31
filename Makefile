@@ -1,6 +1,8 @@
 CC=zig
 
-build: fmt
+build: fmt dev
+
+dev:
 	$(CC) build
 
 fmt:
