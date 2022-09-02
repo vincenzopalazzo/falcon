@@ -1,10 +1,6 @@
-const std = @import("std");
-const testing = std.testing;
+const tcp = @import("./tcp_server.zig");
 
-export fn add(a: i32, b: i32) i32 {
-    return a + b;
-}
-
-test "basic add functionality" {
-    try testing.expect(add(3, 7) == 10);
+test "Bind TCP Server" {
+    var server = tcp.FalconTCP{};
+    try server.listen("localhost", 8080);
 }
